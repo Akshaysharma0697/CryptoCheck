@@ -33,8 +33,8 @@ const Carousel = () => {
     };
 
     useEffect(()=>{
-        fetchTrendingCoins()
-    },[currency]);
+        fetchTrendingCoins();
+    },[currency]);// eslint-disable-line react-hooks/exhaustive-deps
     
     const items= trending.map((coin)=>{
         let profit=coin.price_change_percentage_24h>=0

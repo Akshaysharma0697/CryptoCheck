@@ -20,7 +20,7 @@ const CoinPage = () => {
   }
   useEffect(() => {
     fetchCoin();
-  }, [])
+  }, [])// eslint-disable-line react-hooks/exhaustive-deps
 
   const useStyles={
     container:{

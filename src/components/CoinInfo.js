@@ -23,7 +23,7 @@ const CoinInfo = ({coin}) => {
 
     useEffect(()=>{
         fetchHistoricData();
-    },[days]);
+    },[days]);// eslint-disable-line react-hooks/exhaustive-deps
 
     const darktheme=createTheme({
         palette:{
